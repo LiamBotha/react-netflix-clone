@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import Navbar from './components/Navbar';
+import HomePage from './components/HomePage';
+
+var defaultImg = "https://images.unsplash.com/photo-1619366893681-aba1722f56d3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDkwNTY2MA&ixlib=rb-1.2.1&q=85";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar placeholderImg={defaultImg}/>
+      <HomePage placeholderImg={defaultImg}/>
     </div>
   );
 }

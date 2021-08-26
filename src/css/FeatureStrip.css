@@ -1,0 +1,18 @@
+.feature-strip {
+	margin: 3vw 3vw;
+}
+
+.feature-title {
+	margin: 0 0 1rem 0;
+	color: white;
+	font-size: calc(0.75vh + 0.75vw + 0.4vmin);
+}
+
+.feature-content {
+    white-space: nowrap;
+    height: 9vw;
+}
+
+.feature-content:first-child:hover {
+	transform: scale(1.5) translate(16.5%,-35%);
+}
